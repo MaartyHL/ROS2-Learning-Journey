@@ -4,7 +4,7 @@
 ![C++](https://img.shields.io/badge/C++-17-00599C?style=for-the-badge&logo=c%2B%2B)
 ![CMake](https://img.shields.io/badge/CMake-3.8+-064F8C?style=for-the-badge&logo=cmake)
 
-A structured collection of hands-on ROS 2 C++ training projects covering core middleware architecture, node lifecycles, real-time timers, dynamic parameters, publisher/subscriber patterns, telemetry monitoring, and Turtlesim integration.
+A structured collection of hands-on ROS 2 C++ training projects covering core middleware architecture, node lifecycles, real-time timers, dynamic parameters, publisher/subscriber patterns, telemetry monitoring, safety regulators, and Turtlesim integration.
 
 ---
 
@@ -30,17 +30,17 @@ A structured collection of hands-on ROS 2 C++ training projects covering core mi
 - **Location**: `04_moniteur_batterie/`
 - **Core Concepts**: Autonomous battery state management node, dynamic alert thresholds (`seuil_alerte`), conditional warning logs (`RCLCPP_WARN`), real-time status resetting.
 
-### 5️⃣ Project 5: ROS 2 Catch Them All (`05_catch_them_all`)
-- **Location**: `05_catch_them_all/`
-- **Core Concepts**: Custom ROS 2 interfaces (`Turtle.msg`, `TurtleArray.msg`, `CatchTurtle.srv`), target spawner node with asynchronous service clients, autonomous hunter controller executing closed-loop proportional control (P-Controller) at 100 Hz.
+### 5️⃣ Project 5: Le Régulateur de Sécurité (`robot_safety_stop`)
+- **Location**: `06_safety_stop/`
+- **Core Concepts**: Autonomous obstacle avoidance safety node, topic distance subscription (`std_msgs/msg/Float32`), dynamic emergency stopping (`RCLCPP_ERROR`), slow-down zone management (`RCLCPP_WARN`), velocity commands (`geometry_msgs/msg/Twist`).
 
 ---
 
 ## 🛠️ How to Build & Run Any Project
 
 ```bash
-# Navigate to desired project folder (e.g., 04_moniteur_batterie)
-cd 04_moniteur_batterie
+# Navigate to desired project folder (e.g., 06_safety_stop)
+cd 06_safety_stop
 
 # Build with colcon
 colcon build
@@ -49,7 +49,7 @@ colcon build
 source install/setup.bash
 
 # Run executable
-ros2 run mon_robot_batterie battery_monitor
+ros2 run robot_safety_stop safety_stop_node
 ```
 
 ---
