@@ -30,6 +30,10 @@ A structured collection of hands-on ROS 2 C++ training projects covering core mi
 - **Location**: `04_moniteur_batterie/`
 - **Core Concepts**: Autonomous battery state management node, dynamic alert thresholds (`seuil_alerte`), conditional warning logs (`RCLCPP_WARN`), real-time status resetting.
 
+### 5️⃣ Project 5: ROS 2 Catch Them All (`05_catch_them_all`)
+- **Location**: `05_catch_them_all/`
+- **Core Concepts**: Custom ROS 2 interfaces (`Turtle.msg`, `TurtleArray.msg`, `CatchTurtle.srv`), target spawner node with asynchronous service clients, autonomous hunter controller executing closed-loop proportional control (P-Controller) at 100 Hz.
+
 ---
 
 ## 🛠️ How to Build & Run Any Project

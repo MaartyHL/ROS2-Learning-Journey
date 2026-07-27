@@ -17,16 +17,15 @@ ROS2-Learning-Journey/
 ├── 📜 README.md                               <── Master Summary & Roadmap
 ├── 📜 .gitignore                              <── Build artifacts filter
 │
-├── 🎓 Entrainement/                           <── Core Middleware Fundamentals
-│   ├── 00_le_noeud_bavard/                    <── Minimal Node & Timers
-│   ├── 01_noeud_compteur/                     <── State & Dynamic Parameters
-│   ├── 02_chauffeur_de_tortue/                <── Publishers & Twist Commands
-│   ├── 03_observateur_pose/                   <── Subscribers & Telemetry
-│   └── 04_moniteur_batterie/                  <── Real-Time Battery Monitor
-│
-└── 🐢 ROS2 catch_them_all/                    <── Advanced Multi-Node System
-    ├── src/my_robot_interfaces/               <── Custom .msg and .srv
-    └── src/turtlesim_catch_them_all/          <── Autonomous P-Controller
+└── 🎓 Entrainement/                           <── Core Middleware Fundamentals & Advanced Systems
+    ├── 00_le_noeud_bavard/                    <── Minimal Node & Timers
+    ├── 01_noeud_compteur/                     <── State & Dynamic Parameters
+    ├── 02_chauffeur_de_tortue/                <── Publishers & Twist Commands
+    ├── 03_observateur_pose/                   <── Subscribers & Telemetry
+    ├── 04_moniteur_batterie/                  <── Real-Time Battery Monitor
+    └── 🐢 05_catch_them_all/                  <── Advanced Multi-Node System (Capstone)
+        ├── src/my_robot_interfaces/           <── Custom .msg and .srv
+        └── src/turtlesim_catch_them_all/      <── Autonomous P-Controller
 ```
 
 ---
@@ -40,7 +39,7 @@ ROS2-Learning-Journey/
 - **03 Observateur de Pose**: Topic subscription (`/turtle1/pose`), telemetry callbacks, accessing `turtlesim::msg::Pose` pointer fields.
 - **04 Moniteur de Batterie**: Real-time state thresholding node with dynamic alert levels (`seuil_alerte`) and `RCLCPP_WARN` logging.
 
-### 2️⃣ Advanced Capstone System (`ROS2 catch_them_all/`)
+### 2️⃣ Advanced Capstone System (`Entrainement/05_catch_them_all/`)
 - **Custom ROS 2 Interfaces**: `Turtle.msg`, `TurtleArray.msg`, `CatchTurtle.srv`.
 - **Target Spawner Node**: Random spatial distribution, non-blocking asynchronous service clients (`/spawn`, `/kill`), target tracking publishing.
 - **Autonomous Hunter Controller**:
